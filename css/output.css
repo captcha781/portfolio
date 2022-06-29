@@ -588,16 +588,18 @@ video {
   }
 }
 
+@media (min-width: 1920px){
+  .container{
+    max-width: 1920px;
+  }
+}
+
 .fixed{
   position: fixed;
 }
 
 .absolute{
   position: absolute;
-}
-
-.relative{
-  position: relative;
 }
 
 .left-6{
@@ -618,16 +620,16 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mr-2{
   margin-right: 0.5rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .block{
