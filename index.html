@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iamrealbhuvi</title>
+    <link rel="stylesheet" href="./css/output.css">
 </head>
-<body>
-    <p class="text-3xl">Iamrealbhuvi</p>
+
+<body class="bg-VDarkPurple">
+    <nav class="fixed container  py-1.5 px-1.5 md:py-3 md:px-3 font-Outfit md:mt-5">
+        <div class="flex justify-between items-center md:w-5/6 mx-auto">
+            <h3 class="text-2xl text-LightPurple tracking-wider p-2 " style="font-weight: 900;">Iamrealbhuvi</h3>
+            <ul class="hidden list-none  justify-between items-baseline text-white font-Outfit lg:flex">
+                <li
+                    class="mx-2 font-semibold text-sm px-2 py-1 hover:bg-slate-800 bg-opacity-25 hover:text-LightPurple rounded-lg">
+                    <a href="#">Home</a>
+                </li>
+                <li
+                    class="mx-2 font-semibold text-sm px-2 py-1 hover:bg-slate-800 bg-opacity-25 hover:text-LightPurple rounded-lg">
+                    <a href="#">About</a>
+                </li>
+                <li
+                    class="mx-2 font-semibold text-sm px-2 py-1 hover:bg-slate-800 bg-opacity-25 hover:text-LightPurple rounded-lg">
+                    <a href="#">Services</a>
+                </li>
+                <li
+                    class="mx-2 font-semibold text-sm px-2 py-1 hover:bg-slate-800 bg-opacity-25 hover:text-LightPurple rounded-lg">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li
+                    class="mx-2 font-semibold text-sm px-2 py-1 hover:bg-slate-800 bg-opacity-25 hover:text-LightPurple rounded-lg">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <button
+                class="hidden bg-LightPurple font-Outfit px-8 py-4 rounded-sm font-semibold text-xs text-white lg:block">Hire
+                Me</button>
+
+            <button id="menu-btn" class="block hamburger p-2 mt-2 mr-2 lg:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-Outfit font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+                style="transition-duration: 0.5s;">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+                <a href="mailto:bhuvanesh19112001@gmail.com">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
