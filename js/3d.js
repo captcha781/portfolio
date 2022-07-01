@@ -55,7 +55,7 @@ const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 loader.load(
   // "../models/scene.gltf",
-  "/portfolio/models/scene.gltf",
+  "https://captcha781.github.io/portfolio/models/scene.gltf",
   function (gltf) {
     const model = gltf.scene;
     model.position.set(0, 0, 0);
