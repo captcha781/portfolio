@@ -3,7 +3,7 @@ import * as THREE from "../three/build/three.module.js";
 import Stats from "../three/examples/jsm/libs/stats.module.js";
 
 import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
-import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
+// import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
 
 import { GLTFLoader } from "../three/examples/jsm/loaders/GLTFLoader.js";
 import { DRACOLoader } from "../three/examples/jsm/loaders/DRACOLoader.js";
