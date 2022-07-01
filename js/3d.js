@@ -1,5 +1,5 @@
 // import * as THREE from "../three/build/three.module.js";
-import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.module.js";
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.module.js";
 
 // import Stats from "../three/examples/jsm/libs/stats.module.js";
 
