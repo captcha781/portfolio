@@ -4,7 +4,7 @@ import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/thr
 // import Stats from "../three/examples/jsm/libs/stats.module.js";
 
 // import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
-import { OrbitControls } from ".https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
 // import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
 
 // import { GLTFLoader } from "../three/examples/jsm/loaders/GLTFLoader.js";
