@@ -1,12 +1,16 @@
-import * as THREE from "../three/build/three.module.js";
+// import * as THREE from "../three/build/three.module.js";
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.module.js";
 
-import Stats from "../three/examples/jsm/libs/stats.module.js";
+// import Stats from "../three/examples/jsm/libs/stats.module.js";
 
-import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from ".https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
 // import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
 
-import { GLTFLoader } from "../three/examples/jsm/loaders/GLTFLoader.js";
-import { DRACOLoader } from "../three/examples/jsm/loaders/DRACOLoader.js";
+// import { GLTFLoader } from "../three/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/loaders/GLTFLoader.js";
+// import { DRACOLoader } from "../three/examples/jsm/loaders/DRACOLoader.js";
+import { DRACOLoader } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/loaders/DRACOLoader.js";
 
 let mixer;
 let cube;
