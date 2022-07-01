@@ -5,6 +5,9 @@
 @tailwind utilities;
 @tailwind variants;
 
+body{
+  overflow-x: hidden;
+}
 
 /* Hamburger Menu */
 .hamburger {
