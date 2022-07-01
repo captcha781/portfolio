@@ -54,7 +54,8 @@ dracoLoader.setDecoderPath("../three/examples/js/libs/draco/gltf/");
 const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 loader.load(
-  "../models/scene.gltf",
+  // "../models/scene.gltf",
+  "/portfolio/models/scene.gltf",
   function (gltf) {
     const model = gltf.scene;
     model.position.set(0, 0, 0);
