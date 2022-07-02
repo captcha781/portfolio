@@ -50,8 +50,11 @@ lightred.castShadow = true;
 lightred.intensity = 0.25;
 lightred.receiveShadow = true;
 lightred.angle = Math.PI / 3;
-lightred.target = targetObject;
+lightred.target.position.set(0,0,-5);
+lightred.target.updateMatrixWorld();
 scene.add(lightred);
+scene.add(lightred.target);
+
 
 
 
