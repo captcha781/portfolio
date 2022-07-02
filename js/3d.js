@@ -3,8 +3,8 @@ import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.m
 
 // import Stats from "../three/examples/jsm/libs/stats.module.js";
 
-// import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
-import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
+//import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
+ import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
 // import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
 
 // import { GLTFLoader } from "../three/examples/jsm/loaders/GLTFLoader.js";
@@ -86,7 +86,8 @@ controls.update();
 controls.enablePan = false;
 controls.enableDamping = false;
 controls.enableRotate = true;
-controls.autoRotate = false;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1;
 controls.enableZoom = false;
 controls.saveState = true;
 controls.reset = false;
@@ -120,15 +121,15 @@ loader.load(
 );
 
 window.onresize = function () {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = container.clientWidth / container.clientHeight;
   camera.updateProjectionMatrix();
 
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(container.clientWidth, container.clientHeight);
 };
 
 function animate() {
   requestAnimationFrame(animate);
-  cube.rotation.y += 0.01;
+  // cube.rotation.y += 0.001;
   const delta = clock.getDelta();
 
   mixer.update(delta);
