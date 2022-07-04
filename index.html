@@ -141,17 +141,17 @@
             <!-- <div class="w-full p-0.5 md:p-3 text-center md:w-1/2 h-96 md:h-96" id="modeler" style="height: 350px;"> -->
             <div class="p-3 lg:p-7 -ml-3 font-Outfit w-full lg:w-2/3 lg:mx-3 rounded-lg h-96 lg:h-auto grid place-items-center"
                 id="modeler" style="max-height: 396px; max-width:100%;">
-                <!-- 3D Model -->
+                3D Model
             </div>
 
-            <script type="importmap">
+            <!-- <script type="importmap">
                     {
                         "imports":{
                             "three": "https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.module.js"
                         }
                     }
                                   </script>
-            <script src="./js/3d.js" type="module"></script>
+            <script src="./js/3d.js" type="module"></script> -->
 
 
             <div class="p-3 lg:p-7 font-Outfit w-full lg:w-1/2 lg:mx-3">
@@ -251,15 +251,15 @@
 
 
     <section id="services">
-        <div class="mt-10 pt-14 pb-28 w-full">
+        <div class="mt-10 pt-14 pb-5 w-full">
             <div class="text-5xl md:text-7xl lg:text-9xl font-Outfit text-white text-opacity-25 text-center md:w-full "
                 style="font-weight: 900;">
                 <p>S E R V I C E S</p>
             </div>
             <div class="p-3 md:p-7 font-Outfit w-full md:w-3/4 md:mx-auto">
                 <div class="w-full flex flex-col lg:flex-row justify-around items-stretch py-3">
-                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20" id="develop"
-                        onmouseenter="servicein('develop')" onmouseleave="serviceout('develop')">
+                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20"
+                        id="develop" onmouseenter="servicein('develop')" onmouseleave="serviceout('develop')">
                         <div class="w-14 my-3 mx-auto border-white border-2 border-dashed rounded-full">
                             <img class="w-fit p-3" src="./images/icons/analytics.svg" alt="analytics_icon">
                         </div>
@@ -270,8 +270,8 @@
                             Developing website that fulfills the client needs is the primary goal.
                         </div>
                     </div>
-                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20" id="design"
-                        onmouseenter="servicein('design')" onmouseleave="serviceout('design')">
+                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20"
+                        id="design" onmouseenter="servicein('design')" onmouseleave="serviceout('design')">
                         <div class="w-14 my-3 mx-auto border-white border-2 border-dashed rounded-full">
                             <img class="w-fit p-3" src="./images/icons/ruler.svg" alt="analytics_icon">
                         </div>
@@ -279,11 +279,12 @@
                             Python
                         </div>
                         <div class="my-3 text-sm w-8/12 mx-auto mb-3">
-                            Apart from Web development, I love solving mathematical and algorithmic problems with Python.
+                            Apart from Web development, I love solving mathematical and algorithmic problems with
+                            Python.
                         </div>
                     </div>
-                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20" id="front"
-                        onmouseenter="servicein('front')" onmouseleave="serviceout('front')" >
+                    <div class="w-full lg:w-3/12 p-3 my-3 rounded  bg-opacity-20 text-center font-Outfit text-White hover:bg-slate-500 hover:bg-opacity-20"
+                        id="front" onmouseenter="servicein('front')" onmouseleave="serviceout('front')">
                         <div class="w-14 my-3 mx-auto border-white border-2 border-dashed rounded-full">
                             <img class="w-fit p-3" src="./images/icons/react.svg" alt="analytics_icon">
                         </div>
@@ -299,6 +300,258 @@
         </div>
         <script src="./js/service.js"></script>
     </section>
+
+
+    <section class="pb-14" id="skills">
+        <div class="mt-10 pt-14 pb-14 w-full">
+            <div class="text-5xl md:text-7xl lg:text-9xl font-Outfit text-white text-opacity-25 text-center md:w-full "
+                style="font-weight: 900;">
+                <p>S K I L L S</p>
+            </div>
+        </div>
+
+
+        <div class="p-3 lg:p-7 font-Outfit w-full lg:w-2/3 lg:mx-auto text-White">
+            <div class="w-full md:w-1/2 mx-auto flex flex-row justify-around items-center py-3">
+                <div class="cursor-pointer mx-2 font-semibold text-sm px-2 py-1 bg-LightPurple hover:bg-slate-800 bg-opacity-50 hover:text-LightPurple rounded-lg"
+                    id="fronter" onclick="activeToggleSkiller('fronter', 'fronterData')">
+                    <a>Front End</a>
+                </div>
+                <div class="cursor-pointer mx-2 font-semibold text-sm px-2 py-1 bg-slate-700 hover:bg-slate-800 bg-opacity-50 hover:text-LightPurple rounded-lg"
+                    id="backer" onclick="activeToggleSkiller('backer', 'backerData')">
+                    <a>Backend</a>
+                </div>
+                <div class="cursor-pointer mx-2 font-semibold text-sm px-2 py-1 bg-slate-700 hover:bg-slate-800 bg-opacity-50 hover:text-LightPurple rounded-lg"
+                    id="otherer" onclick="activeToggleSkiller('otherer', 'othererData')">
+
+                    <a>Others</a>
+                </div>
+            </div>
+            <div class="h-auto lg:h-96" id="polymer">
+                <div class="py-3 w-full md:w-11/12 px-2 md:px-1 mx-auto " id="fronterData">
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">HTML:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 91%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">91%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">CSS:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 87%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">87%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">JS:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 78%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">78%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">React:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">70%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Tailwindcss:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 88%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">88%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Bootstrap:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 82%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">82%</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="hidden py-3 w-full md:w-11/12 px-2 md:px-1 mx-auto " id="backerData">
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-16">PHP:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 72%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">72%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-16">Node JS:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 65%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">65%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-16">Express:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">70%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-16">API:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 82%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">82%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden py-3 w-full md:w-11/12 px-2 md:px-1 mx-auto " id="othererData">
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Python:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 87%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">87%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">MySQL:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 65%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">65%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Mongo DB:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 82%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">82%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Mongoose:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 80%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">80%</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center w-full text-center py-4">
+                        <p class="text-sm md:text-lg mx-3 text-left w-24 md:w-16">Redux:</p>
+                        <div class="flex justify-center items-center w-full">
+                            <div class="w-9/12">
+                                <div
+                                    class="relative h-4 rounded-full bg-slate-600 bg-opacity-30 shadow-inner shadow-VDarkPurple">
+                                    <span class="absolute h-1.5 bg-LightPurple  rounded-full left-1.5 top-1.5"
+                                        style="width: 64%;"></span>
+                                </div>
+                            </div>
+                            <p class="text-sm mx-3">64%</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="./js/script.js"></script>

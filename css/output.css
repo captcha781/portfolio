@@ -576,6 +576,22 @@ video {
   right: 1.5rem;
 }
 
+.left-1\.5{
+  left: 0.375rem;
+}
+
+.top-1\.5{
+  top: 0.375rem;
+}
+
+.left-1{
+  left: 0.25rem;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
 .float-right{
   float: right;
 }
@@ -602,6 +618,11 @@ video {
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mt-2{
@@ -680,6 +701,18 @@ video {
   height: auto;
 }
 
+.h-4{
+  height: 1rem;
+}
+
+.h-1\.5{
+  height: 0.375rem;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
 .w-screen{
   width: 100vw;
 }
@@ -720,6 +753,18 @@ video {
 
 .w-8\/12{
   width: 66.666667%;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-9\/12{
+  width: 75%;
 }
 
 .rotate-90{
@@ -769,6 +814,10 @@ video {
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -881,6 +930,10 @@ video {
   --tw-bg-opacity: 0.2;
 }
 
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -973,6 +1026,18 @@ video {
   padding-bottom: 7rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pb-14{
+  padding-bottom: 3.5rem;
+}
+
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1060,6 +1125,17 @@ video {
 
 .text-opacity-25{
   --tw-text-opacity: 0.25;
+}
+
+.shadow-inner{
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-VDarkPurple{
+  --tw-shadow-color: hsl(254, 49%, 11%);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .drop-shadow-md{
@@ -1197,6 +1273,10 @@ video {
     width: 58.333333%;
   }
 
+  .md\:w-16{
+    width: 4rem;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1217,6 +1297,11 @@ video {
   .md\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .md\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .md\:pt-4{
@@ -1246,12 +1331,22 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 976px){
   .lg\:mx-3{
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+  }
+
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .lg\:mt-3{
