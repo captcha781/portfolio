@@ -3,7 +3,7 @@ import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.142.0/build/three.m
 
 // import Stats from "../three/examples/jsm/libs/stats.module.js";
 
-//import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
  import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/controls/OrbitControls.js";
 // import { RoomEnvironment } from "../three/examples/jsm/environments/RoomEnvironment.js";
 
@@ -12,6 +12,7 @@ import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/
 // import { DRACOLoader } from "../three/examples/jsm/loaders/DRACOLoader.js";
 // import { SpotLightShadow } from "three";
 import { DRACOLoader } from "https://cdn.jsdelivr.net/npm/three@0.142.0/examples/jsm/loaders/DRACOLoader.js";
+
 
 let mixer;
 let cube;
@@ -90,7 +91,9 @@ controls.autoRotate = true;
 controls.autoRotateSpeed = 1;
 controls.enableZoom = false;
 controls.saveState = true;
-controls.reset = false;
+controls.reset = true;
+controls.maxPolarAngle = Math.PI / 2.3
+controls.minPolarAngle = Math.PI / 6
 
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("../three/examples/js/libs/draco/gltf/");
