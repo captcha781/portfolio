@@ -105,11 +105,17 @@ loader.load(
   "/portfolio/models/scene.gltf",
   // "https://captcha781.github.io/portfolio/models/scene.gltf",
   function (gltf) {
+    gltf.scene.traverse( (node) => {
+    node.castShadow = true ;
+} )
+
     const model = gltf.scene;
     model.position.set(0, 0, 0);
     model.scale.set(0.5, 0.5, 0.5);
     model.castShadow = true;
     // console.log(scene);
+    
+
     scene.add(model);
     mixer = new THREE.AnimationMixer(model);
     mixer.clipAction(gltf.animations[0]).play();
